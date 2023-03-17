@@ -1,0 +1,47 @@
+{
+  "name": "racing-bar-chart",
+  "version": "0.1.0",
+  "description": "",
+  "license": "MIT",
+  "author": {
+    "name": "Ouadie Limouni",
+    "email": "limouni.ouadie@gmail.com"
+  },
+  "keywords": [
+    "qlik",
+    "nebula",
+    "stardust"
+  ],
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=8"
+  },
+  "main": "dist/racing-bar-chart.js",
+  "module": "dist/racing-bar-chart.esm.js",
+  "scripts": {
+    "build": "nebula build",
+    "lint": "eslint src",
+    "start": "nebula serve",
+    "sense": "nebula sense",
+    "test:integration": "aw puppet --testExt '*.int.js' --glob 'test/integration/**/*.int.js'"
+  },
+  "devDependencies": {
+    "@after-work.js/aw": "6.0.10",
+    "@nebula.js/cli": "1.4.0",
+    "@nebula.js/cli-build": "1.4.0",
+    "@nebula.js/cli-sense": "1.4.0",
+    "@nebula.js/cli-serve": "1.4.0",
+    "eslint": "7.27.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-plugin-import": "2.23.4",
+    "eslint-plugin-mocha": "9.0.0"
+  },
+  "peerDependencies": {
+    "@nebula.js/stardust": "^1.x"
+  },
+  "dependencies": {
+    "d3": "^6.0.0"
+  }
+}
